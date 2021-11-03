@@ -70,16 +70,14 @@ transform: translateY(-5px);
 @media (max-width:1400px) {
 .cards{
     width: 400px;
-}
-}
+}}
 @media (max-width:1250px){
 .cards{
     width: 320px;
 }
 .priceCard{
     margin-left: 10px;
-}
-}
+}}
 @media (max-width:1024px){
 .priceCard{
     display: grid;
@@ -93,18 +91,15 @@ transform: translateY(-5px);
 }
 .cards{
     width:600px;
-}
-}
+}}
 @media (max-width:650px){
 .cards{
     width:450px;
-}
-}
+}}
 @media (max-width:500px){
 .priceCard{
     margin: 50px 20px
 }
 .cards{
     width:100%;
-}
-}
+}}

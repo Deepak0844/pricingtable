@@ -1,5 +1,4 @@
 import './App.css';
-
 export default function App() {
 return (
     <div className="App">
@@ -10,6 +9,7 @@ return (
 function Snippets(){
   return(
  <section className="priceCard">
+   {/* card 1 */}
     <div className="cards">
       <h4 className="firstLine">FREE</h4>
        <h1>$0<span className="priceText">/month</span></h1>
@@ -28,7 +28,7 @@ function Snippets(){
     <button className="btn btn-primary" type="button">BUTTON</button>
   </div>
 </div>
-
+{/* card 2 */}
     <div className="cards">
       <h4 className="firstLine">PLUS</h4>
       <h1>$9<span className="priceText">/month</span></h1>
@@ -47,7 +47,7 @@ function Snippets(){
     <button className="btn btn-primary" type="button">BUTTON</button>
   </div>
 </div>
-
+{/* card 3*/}
     <div className="cards">
      <h4 className="firstLine">PRO</h4>
       <h1>$49<span className="priceText">/month</span></h1>
