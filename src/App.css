@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+.App{
+  background: linear-gradient(to right,#0062E6, #33AEFF);
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.priceText{
+  font-size: 13px;
+  font-weight: 500;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.priceCard{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.cards{
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 15px;
+  background: white;
+  width: 450px;
+  transition:transform 0.2s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li{
+  list-style-type:none;
+  line-height: 40px;
+}
+.fa{
+  font-size: 18px;
+  padding-right: 7px;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+.firstLine{
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+.lighterText~li,.lighterText{
+opacity: 0.4;
+}
+.btn{
+  border-radius: 30px;
+  padding: 15px;
+  margin: 5px 10px;
+  opacity: 0.7;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.btn:hover{
+  background:#0d5ace;
+}
+.priceCard .cards:hover .btn {
+  opacity: 1;
+}
+.cards:hover{
+transform: translateY(-5px);
+}
+@media (max-width:1400px) {
+.cards{
+    width: 400px;
+}
+}
+@media (max-width:1250px){
+.cards{
+    width: 320px;
+}
+.priceCard{
+    margin-left: 10px;
+}
+}
+@media (max-width:1024px){
+.priceCard{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    margin: 50px;
+}
+.App{
+    height: auto;
+}
+.cards{
+    width:600px;
+}
+}
+@media (max-width:650px){
+.cards{
+    width:450px;
+}
+}
+@media (max-width:500px){
+.priceCard{
+    margin: 50px 20px
+}
+.cards{
+    width:100%;
+}
 }
